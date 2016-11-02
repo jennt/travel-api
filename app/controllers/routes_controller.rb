@@ -1,6 +1,6 @@
 class RoutesController < ApplicationController
   def index
     @routes = Route.all
-    respond_to :html, :json
+    respond_to :json
   end
 end
