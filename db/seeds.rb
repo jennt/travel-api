@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Route.create(route: "A", name: "Duke Starbucks", street: "2301 Erwin Rd", city: "Durham", state: "NC", zip: "27705")
+Route.create(route: "A", name: "Willowdale Starbucks", street: "3801 Guess Rd", city: "Durham", state: "NC", zip: "27705")
+Route.create(route: "A", name: "Kroger Starbucks", street: "3457 Hillsborough Rd", city: "Durham", state: "NC", zip: "27705")
+# Route.create(route: "", name: "", street: "", city: "" state: "", zip: "")
+# Route.create(route: "", name: "", street: "", city: "" state: "", zip: "")
+# Route.create(route: "", name: "", street: "", city: "" state: "", zip: "")
