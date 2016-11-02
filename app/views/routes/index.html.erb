@@ -1,2 +1,6 @@
 <h1>Routes#index</h1>
-<p>Find me in app/views/routes/index.html.erb</p>
+<ul>
+  <% @routes.each do |route| %>
+      <li><%= route %></li>
+  <% end %>
+</ul>
