@@ -4,7 +4,10 @@ Rails.application.routes.draw do
 
   get '/' => 'routes#index'
 
-  # get '/routes' => "routes#show"
+  get '/routes' => "routes#index"
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # post '/' => 'routes#create'
+  #
+  # patch '/' => 'routes#update'
+
 end
