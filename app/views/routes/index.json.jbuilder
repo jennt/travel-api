@@ -6,14 +6,14 @@
 #   <% end %>
 # </ul>
 
-# json.(@routes, :route, :name, :street, :city, :state, :zip)
+json.(@routes, :route, :name, :street, :city, :state, :zip)
 
-  json.routes @routes do |r|
-    json.route r.route
-    json.name r.name
-    json.street r.street
-    json.city r.city
-    json.state r.state
-    json.zip r.zip
-    json.created_at r.created_at
-  end
+  # json.routes @routes do |r|
+  #   json.route r.route
+  #   json.name r.name
+  #   json.street r.street
+  #   json.city r.city
+  #   json.state r.state
+  #   json.zip r.zip
+  #   json.created_at r.created_at
+  # end
