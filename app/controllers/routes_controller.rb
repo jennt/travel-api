@@ -4,4 +4,5 @@ class RoutesController < ApplicationController
     @routes.to_json
     # respond_to :json
   end
+
 end
