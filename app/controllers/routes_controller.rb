@@ -7,7 +7,7 @@ class RoutesController < ApplicationController
   end
 
   def create
-    @route = Route.new(route: params['route'], name: params['route'], street: params['street'], city: params['city'], state: params['state'], zip: params['zip'])
+    @route = Route.new(route: params['route'], name: params['name'], street: params['street'], city: params['city'], state: params['state'], zip: params['zip'])
 
     if @route.save
       render :json => @route
@@ -19,7 +19,7 @@ class RoutesController < ApplicationController
   def update
     @route = Route.find params[:id]
 
-    if @route.update route_params
+    if @route.update (route: params['route'], name: params['name'], street: params['street'], city: params['city'], state: params['state'], zip: params['zip'])
       render :json => @route
     else
       render_error @route.errors.full_messages
