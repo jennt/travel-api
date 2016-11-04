@@ -1,4 +1,7 @@
 class RoutesController < ApplicationController
+
+  attr_accessor :route, :name, :street, :city, :state, :zip
+  
   def index
     @routes = Route.all
     @routes
@@ -14,6 +17,10 @@ class RoutesController < ApplicationController
     else
       render_error @route.errors.full_messages
     end
+  end
+
+  def show
+
   end
 
   # def update

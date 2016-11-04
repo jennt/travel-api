@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/routes' => "routes#index"
 
   post '/' => 'routes#create'
+
+  get '/route' => 'routes#show'
   #
   # patch '/' => 'routes#update'
 
