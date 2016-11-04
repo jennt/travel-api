@@ -16,20 +16,20 @@ class RoutesController < ApplicationController
     end
   end
 
-  def update
-    @route = Route.find params[:id]
-
-    if @route.update (route: params['route'], name: params['name'], street: params['street'], city: params['city'], state: params['state'], zip: params['zip'])
-      render :json => @route
-    else
-      render_error @route.errors.full_messages
-    end
-  end
-
-  private
-
-  # def route_params
-  #   params.require(:route).permit(:route, :name, :street, :city, :state, :zip)
+  # def update
+  #   @route = Route.find params[:id]
+  #
+  #   if @route.update (route: params['route'], name: params['name'], street: params['street'], city: params['city'], state: params['state'], zip: params['zip'])
+  #     render :json => @route
+  #   else
+  #     render_error @route.errors.full_messages
+  #   end
   # end
 
+#   private
+#
+#   # def route_params
+#   #   params.require(:route).permit(:route, :name, :street, :city, :state, :zip)
+#   # end
+#
 end
