@@ -11,3 +11,4 @@ Route.create(route: "A", crew: "Blue", name: "Kroger Starbucks", street: "3457 H
 # Route.create(route: "", name: "", street: "", city: "" state: "", zip: "")
 # Route.create(route: "", name: "", street: "", city: "" state: "", zip: "")
 # Route.create(route: "", name: "", street: "", city: "" state: "", zip: "")
+Task.create(route_id: 1, task_name: "mulch", completed: false)

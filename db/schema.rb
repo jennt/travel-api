@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161102200306) do
+ActiveRecord::Schema.define(version: 20161105205602) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,4 +27,14 @@ ActiveRecord::Schema.define(version: 20161102200306) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tasks", force: :cascade do |t|
+    t.integer  "route_id"
+    t.string   "task_name"
+    t.boolean  "completed"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["route_id"], name: "index_tasks_on_route_id", using: :btree
+  end
+
+  add_foreign_key "tasks", "routes"
 end
