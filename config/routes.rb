@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   patch 'task/:id' => 'tasks#update'
 
-  delete 'task/delete' => 'tasks#destroy'
+  delete 'task/:id' => 'tasks#destroy'
 
   # root 'routes#index'
 
