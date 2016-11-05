@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   post '/' => 'routes#create'
 
-  get '/show/:route' => 'routes#show'
+  get '/show' => 'routes#show'
   #
   # patch '/' => 'routes#update'
 
