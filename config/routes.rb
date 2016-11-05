@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post '/' => 'routes#create'
 
   get '/show' => 'routes#show'
-  #
-  # patch '/' => 'routes#update'
+
+  patch '/location/:id' => 'routes#update'
 
 end

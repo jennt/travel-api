@@ -29,7 +29,7 @@ class RoutesController < ApplicationController
 
 
   def update
-    @route = Route.find params[:id]
+    @route = Route.find(params[:id])
 
     if @route.update(route: params['route'], crew: params['crew'], name: params['name'], street: params['street'], city: params['city'], state: params['state'], zip: params['zip'])
       render :json => @route
@@ -37,6 +37,10 @@ class RoutesController < ApplicationController
       render_error @route.errors.full_messages
     end
   end
+
+  # def delete
+  #   @route = Route.find(params[:id])
+
 
 #   private
 #
