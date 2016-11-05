@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20161102200306) do
 
   create_table "routes", force: :cascade do |t|
     t.string   "route"
+    t.string   "crew"
     t.string   "name"
     t.string   "street"
     t.string   "city"
