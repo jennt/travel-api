@@ -38,9 +38,14 @@ class RoutesController < ApplicationController
     end
   end
 
-  # def delete
-  #   @route = Route.find(params[:id])
-
+  def destroy
+    @location = Route.find(params[:id])
+    if @location.destroy
+      render :json => Route.all
+    else
+      render_error @location.errors.full_messages
+    end
+  end
 
 #   private
 #

@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   patch '/location/:id' => 'routes#update'
 
+  delete '/location/:id' => 'routes#destroy'
+
 end
