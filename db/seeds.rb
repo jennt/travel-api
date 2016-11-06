@@ -2,10 +2,10 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 #
-Route.create(route: "A", crew: "Blue", name: "Duke Starbucks", street: "2301 Erwin Rd", city: "Durham", state: "NC", zip: "27705")
-Route.create(route: "A", crew: "Blue", name: "Willowdale Starbucks", street: "3801 Guess Rd", city: "Durham", state: "NC", zip: "27705")
-Route.create(route: "A", crew: "Blue", name: "Kroger Starbucks", street: "3457 Hillsborough Rd", city: "Durham", state: "NC", zip: "27705")
-Route.create(route: "C", crew: "Red", name: "New York Starbucks", street: "1000 Empire Rd", city: "NY", state: "NY", zip: "10000")
+Route.create(route: "A", crew: "Blue", name: "Duke Starbucks", street: "2301 Erwin Rd", city: "Durham", state: "NC", zip: "27705", task_list: "")
+Route.create(route: "A", crew: "Blue", name: "Willowdale Starbucks", street: "3801 Guess Rd", city: "Durham", state: "NC", zip: "27705", task_list: "")
+Route.create(route: "A", crew: "Blue", name: "Kroger Starbucks", street: "3457 Hillsborough Rd", city: "Durham", state: "NC", zip: "27705", task_list: "")
+Route.create(route: "C", crew: "Red", name: "New York Starbucks", street: "1000 Empire Rd", city: "NY", state: "NY", zip: "10000", task_list: "")
 
 
 
