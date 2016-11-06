@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   get '/show' => 'routes#show'
 
+  get '/:id' => 'routes#search'
+
   patch '/location/:id' => 'routes#update'
 
   delete '/location/:id' => 'routes#destroy'

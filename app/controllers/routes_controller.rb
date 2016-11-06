@@ -16,6 +16,13 @@ class RoutesController < ApplicationController
 
   end
 
+  def search
+    @route = Route.find(params[:id])
+    add_task_list
+
+    render :json => @route
+  end
+
   def create
     @route = Route.new route_params
 
@@ -27,7 +34,6 @@ class RoutesController < ApplicationController
       render_error @route.errors.full_messages
     end
   end
-
 
   def update
     @route = Route.find(params[:id])
