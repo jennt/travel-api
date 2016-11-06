@@ -6,7 +6,7 @@
 #   <% end %>
 # </ul>
 
-json.(@routes, :route, :crew, :name, :street, :city, :state, :zip)
+json.(@routes, :route, :crew, :name, :street, :city, :state, :zip, :task_list)
 
   # json.routes @routes do |r|
   #   json.route r.route

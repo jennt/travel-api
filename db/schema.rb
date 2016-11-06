@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20161105205602) do
     t.string   "city"
     t.string   "state"
     t.integer  "zip"
+    t.json     "task_list"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -8,6 +8,7 @@ class CreateRoutes < ActiveRecord::Migration[5.0]
       t.string :city
       t.string :state
       t.integer :zip
+      t.json :task_list
 
       t.timestamps
     end
