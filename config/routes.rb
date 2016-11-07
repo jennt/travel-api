@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   get '/show' => 'routes#show'
 
-  get '/:id' => 'routes#search'
+  get '/:route' => 'routes#search'
 
   patch '/location/:id' => 'routes#update'
 

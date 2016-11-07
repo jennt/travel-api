@@ -17,10 +17,10 @@ class RoutesController < ApplicationController
   end
 
   def search
-    @route = Route.find(params[:id])
-    add_task_list
+    @routes = Route.where(route: params[:route])
+    @routes.each { |r| r.task_list = Task.where(route_id: r.id) }
 
-    render :json => @route
+    render :json => @routes
   end
 
   def create
