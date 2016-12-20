@@ -2,13 +2,13 @@
 
 ## Synopsis
 
-This project is a rails API backend built for a group project.
+This project is a rails API backend built for a group project. Planscape is a tool designed for landscapers to track jobs and follow the quickest route from job to job.
 
-[Hosted at](https://shielded-atoll-99970.herokuapp.com/)
+[Hosted on heroku](https://shielded-atoll-99970.herokuapp.com/)
 
 [View the front end for this assignment on GitHub Pages](https://donaldsonjulia.github.io/TIY-Planscape/)
 
-Planscape is a tool designed for landscapers to track jobs and follow the quickest route from job to job.
+
 
 ##Code Example
 ```ruby
