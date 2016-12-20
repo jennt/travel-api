@@ -4,9 +4,10 @@
 
 This project is a rails API backend built for a group project.
 
-[hosted at](https://shielded-atoll-99970.herokuapp.com/)
+[Hosted at](https://shielded-atoll-99970.herokuapp.com/)
 
 [View the front end for this assignment on GitHub Pages](https://donaldsonjulia.github.io/TIY-Planscape/)
+
 Planscape is a tool designed for landscapers to track jobs and follow the quickest route from job to job.
 
 ##Code Example
