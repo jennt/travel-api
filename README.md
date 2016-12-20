@@ -1,24 +1,28 @@
-# README
+# Travel API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Synopsis
 
-Things you may want to cover:
 
-* Ruby version
+This project is a rails API backend built for a group project.
+[View the front end for this assignment on GitHub Pages](https://donaldsonjulia.github.io/TIY-Planscape/)
 
-* System dependencies
+##Code Example
+```ruby
+def destroy
+  @location = Route.find(params[:id])
 
-* Configuration
+  if @location.destroy
+    add_each_task_list
+    render :json => @routes
+  else
+    render_error @location.errors.full_messages
+  end
+end
+```
 
-* Database creation
+##Contributors
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Sam Davis-Castro - frontend](https://github.com/SamPlifier)
+* [Julia Donaldson - frontend](https://github.com/donaldsonjulia)
+* [Gabriel Estes - backend](https://github.com/gabrielestes)
+* [Jenn Tustin - backend](https://github.com/jennt)
